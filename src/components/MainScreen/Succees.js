@@ -1,11 +1,12 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Message, Table } from "semantic-ui-react";
+import { Table } from "semantic-ui-react";
 import useVisible from "../../hooks/useVisible.js";
 import { Transition } from "semantic-ui-react";
 import Moment from "react-moment";
 import { Loader } from "semantic-ui-react";
 import { UserTable } from "../../services/tableValues.service";
+import ErrorMessage from "./ErrorMessage.js";
 
 const Success = () => {
   const visible = useVisible();
@@ -56,11 +57,7 @@ const Success = () => {
         ) : (
           <Loader active inline="centered" />
         )}
-        {errors && (
-          <Message negative>
-            <Message.Header>{error}</Message.Header>
-          </Message>
-        )}
+        <ErrorMessage visible={errors} error={error} />
       </div>
     </Transition>
   );

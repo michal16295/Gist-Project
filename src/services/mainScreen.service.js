@@ -46,3 +46,16 @@ export const getIcon = (stepIndex) => {
       return "Unknown stepIndex";
   }
 };
+
+export const validateForm = (formData) => {
+  if (
+    activeStep === 1 &&
+    (formData.operation === "" ||
+      formData.gender === "" ||
+      formData.language === "" ||
+      formData.age === "")
+  ) {
+    return false;
+  }
+  return true;
+};

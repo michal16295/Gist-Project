@@ -8,6 +8,7 @@ import {
   getSteps,
   getIcon,
   getStepContent,
+  validateForm,
 } from "../services/mainScreen.service";
 import Buttons from "../components/MainScreen/Buttons";
 import ErrorMessage from "../components/MainScreen/ErrorMessage";
@@ -43,14 +44,8 @@ const MainScreen = () => {
   };
 
   const handleNext = () => {
-    if (
-      activeStep === 1 &&
-      (formData.operation === "" ||
-        formData.gender === "" ||
-        formData.language === "" ||
-        formData.age === "")
-    ) {
-      setError("All fields are required!");
+    if (!validateForm(formData)) {
+      setError("All fields are required");
       return;
     }
     setError("");
