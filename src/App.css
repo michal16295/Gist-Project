@@ -1,38 +1,68 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: rgb(228, 228, 228) !important;
+}
+.container {
+  border-radius: 5px !important;
+  margin: auto;
+  width: 70%;
+  margin-top: 10%;
+  padding-bottom: 20%;
+}
+.ui.active.step,
+.ui.steps .step.active .title {
+  cursor: auto;
+  color: #f02a4d !important;
+  font-weight: 700;
+}
+
+.input-field {
+  border: 0 !important;
+  outline: 0 !important;
+  border-bottom: 2px solid #f02a4d !important;
+  font-size: 1.4rem !important;
+  width: 90%;
+}
+.welcome-container {
   text-align: center;
+  padding: 30px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.confirm-container {
+  text-align: center;
+  margin: auto;
+  padding: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.primary-button {
+  background: #f02a4d !important;
+  color: white !important;
 }
-
-.App-link {
-  color: #61dafb;
+.success-container {
+  text-align: center;
+  margin: auto;
+  padding: 30px;
+  width: 70%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ui.selection.dropdown {
+  min-width: 100% !important;
+}
+.confirm-heading {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2rem;
+  text-decoration: #f02a4d underline 1px;
+}
+.confirm-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(119, 119, 119);
 }
