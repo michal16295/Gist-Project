@@ -5,7 +5,7 @@ import { Transition } from "semantic-ui-react";
 const Confirm = ({ values }) => {
   const visible = useVisible();
   return (
-    <Transition visible={visible} animation="scale" duration={600}>
+    <Transition visible={visible} animation="scale" duration={800}>
       <div className="confirm-container">
         <label className="confirm-heading">Age</label>
         <p className="confirm-text">{values.age}</p>

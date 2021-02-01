@@ -44,7 +44,7 @@ const MainScreen = () => {
   };
 
   const handleNext = () => {
-    if (!validateForm(formData)) {
+    if (!validateForm(activeStep, formData)) {
       setError("All fields are required");
       return;
     }

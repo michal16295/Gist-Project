@@ -9,7 +9,7 @@ const Input = ({ values, handleChange, handleSelect }) => {
   const { data } = useSelector((state) => state.formData);
   const visible = useVisible();
   return (
-    <Transition visible={visible} animation="scale" duration={600}>
+    <Transition visible={visible} animation="scale" duration={800}>
       <div className="welcome-container">
         <Form>
           <Form.Field>

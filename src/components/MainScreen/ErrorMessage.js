@@ -3,7 +3,7 @@ import { Message, Transition } from "semantic-ui-react";
 
 const ErrorMessage = ({ visible, error }) => {
   return (
-    <Transition.Group animation="zoom" duration={700}>
+    <Transition.Group animation="zoom" duration={800}>
       {visible && (
         <Message negative>
           <Message.Header>{error}</Message.Header>

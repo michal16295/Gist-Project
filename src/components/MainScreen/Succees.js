@@ -14,7 +14,7 @@ const Success = () => {
     (state) => state.user
   );
   return (
-    <Transition visible={visible} animation="scale" duration={600}>
+    <Transition visible={visible} animation="scale" duration={800}>
       <div className="success-container">
         <h2>SUCCESS!</h2>
         <h4>thank you for submitting</h4>

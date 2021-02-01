@@ -47,7 +47,7 @@ export const getIcon = (stepIndex) => {
   }
 };
 
-export const validateForm = (formData) => {
+export const validateForm = (activeStep, formData) => {
   if (
     activeStep === 1 &&
     (formData.operation === "" ||
